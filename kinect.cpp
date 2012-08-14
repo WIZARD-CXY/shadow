@@ -126,8 +126,8 @@ int main(int argc, char *argv[])
         if (!motor.Open()) // Open motor device
                 return 1;
        
-		int i=50;
-		while(i>=-40)
+		int i=30;
+		while(i>=-30)
 		{
 			motor.Move(i);
 			sleep(5);
@@ -135,6 +135,6 @@ int main(int argc, char *argv[])
 
 			i=i-5;
 		}
-		printf ( "Back to 0 degree\n" );
+
 		return 0;
 }
