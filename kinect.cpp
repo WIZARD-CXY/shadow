@@ -126,7 +126,7 @@ int main(int argc, char *argv[])
         if (!motor.Open()) // Open motor device
                 return 1;
        
-		int i=40;
+		int i=50;
 		while(i>=-40)
 		{
 			motor.Move(i);
