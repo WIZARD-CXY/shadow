@@ -49,3 +49,19 @@
 	<termios.h>
 	<string.h>
 
+1346486641 source:/home/wizard/shadow/test/transithub.cpp
+	"transithub.h"
+	<fstream>
+	<sstream>
+	<string>
+	<iostream>
+	<iomanip>
+	<sys/ioctl.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+
+1346661385 /home/wizard/shadow/test/transithub.h
+	<fstream>
+	<string>
+

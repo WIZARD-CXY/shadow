@@ -10,7 +10,7 @@ using namespace std;
 #define SUCCUSS 1
 #define NONE 2
 #define REPLY 3
-#define GAITDEBUG
+
 
 
 //data packets enum

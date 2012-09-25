@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/test" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/motion_client" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -29,6 +29,13 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-march=i386" />
+			<Add option="-fexpensive-optimizations" />
+			<Add option="-Os" />
+			<Add option="-O3" />
+			<Add option="-O2" />
+			<Add option="-O1" />
+			<Add option="-O" />
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
