@@ -1,2 +1,25 @@
-The Project is developed to kinect to shadow human's actions.
-a test 
+Shadow Project 
+Author: Chenxingyu wizard_cxy@hotmail.com
+contributor: Yangzidong refyzd@gmail.com
+
+___________________________________________________________
+!! IMPORTANT !!
+ Dependencies:
+ 1 OS: ubuntu 12.04
+ 2 ROS: groovy
+ 3 ros-groovy-openni-*
+ 4 NITE-Bin-Dev-Linux-x86-v1.5.2.21 (strictly)
+ 5 gnuplot
+
+ USAGE prerequisites:
+ 1 roscore running
+ 2 rosrun openni_tracker openni_tracker running
+ 3 rosrun rviz rviz (for debug use)
+ 
+ Procedure:
+ 1 Have met the Prerequisites
+ 2 Run the collectTrainingSetData.sh
+ 3 Run the collectTestSetData.sh
+ 4 Run the trainSVM.sh to get the svm model in svm/tools dir
+ 5 Run the offlineTest.sh  or onlineTest.sh
+ __________________________________________________________
