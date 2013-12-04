@@ -28,7 +28,7 @@ class myQueueWorker(threading.Thread):
             while self.Flag:
                 if len(self.q) > 0:
                     self.x.append(convert(self.q.popleft()))
-                    time.sleep(0.034) #magic sleep time ,thread safe is guaranteed by dequeue
+                    time.sleep(0.034) #magic sleep time ,force a thread switch to capture thread ,thread safe is guaranteed by dequeue
      
     """redefine the append method to get the deque's max size=MAX_QUEUE_SIZE"""
     def append(self,val):
