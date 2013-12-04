@@ -27,7 +27,7 @@ class myQueueWorker(threading.Thread):
             # do online Test
             while self.Flag:
                 if len(self.q) > 0:
-                    self.x.append(convert(self.q[0]))
+                    self.x.append(convert(self.q.popleft()))
                     time.sleep(0.034) #magic sleep time ,thread safe is guaranteed by dequeue
      
     """redefine the append method to get the deque's max size=MAX_QUEUE_SIZE"""
